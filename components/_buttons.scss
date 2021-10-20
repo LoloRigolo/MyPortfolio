@@ -1,0 +1,28 @@
+.button {
+    padding: 16px 32px;
+    background-color: var(--button-color);
+    border: 3px solid var(--button-color);
+    color: white;
+    transition: all 0.3s;
+    display: inline-block;
+
+    &:hover {
+        background-color: var(--button-color);
+        border: 3px solid var(--button-color);
+    }
+
+    &-secondary {
+        --button-color: lightgreen;
+    }
+}
+.button-secondary {
+    @extend .button;
+    background-color: $color-secondary;
+    border: 3px solid darken($color-secondary, 20%);
+
+
+    &:hover {
+        background-color: darken($color-secondary, 20%);
+        border: 3px solid darken($color-secondary, 40%);
+    }
+}
