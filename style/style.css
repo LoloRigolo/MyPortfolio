@@ -1,10 +1,16 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+    
 :root {
   --button-color: $color-primary;
   --button-color-hover: darken($color-primary, 20%);
 }
 
 .button, .button-secondary {
-  padding: 16px 32px;
+  padding: 16px 42px;
   background-color: var(--button-color);
   border: 3px solid var(--button-color);
   color: white;
@@ -16,7 +22,7 @@
   border: 3px solid var(--button-color);
 }
 .button-secondary {
-  --button-color: lightgreen;
+  --button-color: rgb(74, 105, 74);
 }
 
 .button-secondary {
@@ -27,5 +33,29 @@
   background-color: #38e038;
   border: 3px solid #189a18;
 }
+
+.Presentation{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:black;
+    border: solid 2px white;
+    width: 47%; 
+    color: white;
+    padding: 20px;
+    padding-top: 100px;
+    
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 10%;
+    font-family: 'Lobster', cursive;
+}
+
 
 /*# sourceMappingURL=style.css.map */
