@@ -1,0 +1,31 @@
+:root {
+  --button-color: $color-primary;
+  --button-color-hover: darken($color-primary, 20%);
+}
+
+.button, .button-secondary {
+  padding: 16px 32px;
+  background-color: var(--button-color);
+  border: 3px solid var(--button-color);
+  color: white;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.button:hover, .button-secondary:hover {
+  background-color: var(--button-color);
+  border: 3px solid var(--button-color);
+}
+.button-secondary {
+  --button-color: lightgreen;
+}
+
+.button-secondary {
+  background-color: lightgreen;
+  border: 3px solid #38e038;
+}
+.button-secondary:hover {
+  background-color: #38e038;
+  border: 3px solid #189a18;
+}
+
+/*# sourceMappingURL=style.css.map */
