@@ -7,8 +7,7 @@
     }
 
 body{
-    background-color: rgb(54, 54, 54);
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/Background1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,7 +22,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.37);
+    list-style: none;
     width: 100%;
     height: 10%;
     display: inline-block;
@@ -55,9 +54,73 @@ a{
 h1{
     font-family: 'Montserrat';
     color: white;
-    padding-top: 220px;
-    margin: 20px;
+    font-size: 40px;
+    position:absolute;
+    left: 47%;
+    top: 50%;
+    margin-left: -150px; 
+    margin-top: -90px;
+
 }
+
+
+h3{
+    font-family: 'Montserrat';
+    color: white;
+    position:absolute;
+    left: 47%;
+    top: 50%;
+    margin-left: -165px; 
+    margin-top: -20px;
+
+}
+
+
+.button {
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    position:absolute;
+    left: 43%;
+    top: 53%;
+    margin-left: -165px; 
+    margin-top: -20px;
+
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: violet;
+    padding: 15px 50px;
+    margin: 0 auto;
+    
+    & span {
+    position: relative; 
+    z-index: 1;
+    }
+
+    &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: orange;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    }
+
+    &:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    }
+}
+
 
 .navbar {
     display: block;
@@ -142,7 +205,7 @@ h1{
 }
       
 .showNav {
-    transform: translateY(0);
+    transform: translateY(0);    
 }
     
 .navbar {
@@ -155,9 +218,8 @@ h1{
     height: 100vh;
     overflow: hidden;
     color: white;
-    transform: translateY(-100%); /*Cache le menu par défaut*/
     transition: transform 0.7s ease;
-    z-index: 400000;
+    z-index: 4000;
 
     
     & ul { 
@@ -181,3 +243,4 @@ h1{
         
     }
 }
+
