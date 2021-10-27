@@ -259,7 +259,7 @@ h3 {
 }
 
 .item1 {
-  background-image: url(../img/Lorenzo.jpg);
+  background-image: url(../img/Code.jpg);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -299,7 +299,7 @@ h3 {
 }
 
 .item4 {
-  background-image: url(../img/Lorenzo.jpg);
+  background-image: url(../img/Passion.gif);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -311,6 +311,82 @@ h3 {
   width: 60%;
   height: 70%;
   grid-row: 2/2;
+  grid-column: 2/3;
+}
+
+.grille_skills {
+  width: 90%;
+  height: 1920px;
+  margin: 0 auto;
+  background-color: lightseagreen;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr;
+}
+
+.item7 {
+  background-color: blue;
+  grid-row: 2/2;
+  grid-column: 2/3;
+}
+
+.item8 {
+  background-color: orange;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.item9 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item10 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item11 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item12 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item13 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item14 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item15 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item16 {
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.item17 {
+  background-color: blue;
+  grid-row: 2/4;
   grid-column: 2/3;
 }
 
