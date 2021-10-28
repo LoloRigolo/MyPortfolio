@@ -121,7 +121,6 @@ section {
   display: grid;
   place-items: center;
 }
-
 .card {
   width: 450px;
   display: flex;
@@ -584,7 +583,7 @@ html {
 }
 
 .item17 {
-  background-image: url(../img/Git.jpg);
+  background-image: url(../img/adobe.jpg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -627,17 +626,11 @@ html {
   .grille_projects {
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 5fr 5fr 5fr;
+    margin-top: 150px;
   }
 }
 
 .item19 {
-  background-image: url(../img/Code.jpg);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   justify-self: center;
   width: 60%;
   height: 70%;
@@ -648,8 +641,15 @@ html {
   .item19 {
     grid-row: 1/2;
     grid-column: 1;
-    width: 100%;
     height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  iframe {
+    width: 300px;
+    height: 300px;
+    margin-left: -50px;
   }
 }
 
@@ -730,15 +730,13 @@ html {
     height: 36px;
     border: none;
     cursor: pointer;
-    background-color: white;
     background-image: url(../img/ham.svg);
     background-size: 100%;
     position: fixed;
   }
 
   .showClose {
-    background-image: url(../img/Croix.png);
-    background-color: white;
+    background-image: url(../img/Croix.jpg);
     background-size: 100%;
     z-index: 50000;
   }
