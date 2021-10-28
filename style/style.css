@@ -30,19 +30,7 @@ body {
 }
 @media (max-width: 800px) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    padding-top: 4px;
-    height: 60px;
-    width: 1500px;
-    position: fixed;
-    z-index: 5000;
+    display: none;
   }
 }
 
@@ -285,7 +273,6 @@ html {
   .grille {
     grid-template-columns: 1fr;
     grid-template-rows: 5fr 5fr 5fr 5fr;
-    height: 1900px;
   }
 }
 
@@ -299,8 +286,8 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-size: cover;
-  margin: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
   justify-self: center;
   width: 60%;
   height: 70%;
@@ -332,6 +319,9 @@ html {
     grid-row: 2/2;
     grid-column: 1;
   }
+  .item2 p {
+    font-size: 14px;
+  }
 }
 
 .item3 {
@@ -350,6 +340,9 @@ html {
     grid-row: 4/4;
     grid-column: 1;
   }
+  .item3 p {
+    font-size: 14px;
+  }
 }
 
 .item4 {
@@ -358,9 +351,9 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-repeat: no-repeat;
   background-size: cover;
   justify-self: center;
-  margin: 70px;
   width: 60%;
   height: 70%;
   grid-row: 2/2;
@@ -399,9 +392,6 @@ html {
   height: 100%;
   grid-row: 2/3;
   grid-column: 1/2;
-  position: relative;
-  justify-self: center;
-  align-items: center;
 }
 @media (max-width: 800px) {
   .item5 {
@@ -414,6 +404,8 @@ html {
 .item6 {
   grid-row: 2/-8;
   color: white;
+  align-items: center;
+  justify-content: center;
   font-family: "Montserrat";
   margin-top: 50px;
   grid-column: 2/3;
@@ -622,33 +614,107 @@ html {
     font-size: 2px;
   }
 }
-.item18 .item19 {
-  background-image: url(../img/adobe.jpg);
+
+.grille_projects {
+  width: 90%;
+  height: 900px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 5fr 5fr;
+}
+@media (max-width: 800px) {
+  .grille_projects {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 5fr 5fr 5fr;
+  }
+}
+
+.item19 {
+  background-image: url(../img/Code.jpg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  grid-row: 9/10;
+  background-position: center;
+  justify-self: center;
+  width: 60%;
+  height: 70%;
+  grid-row: 1/2;
   grid-column: 1/2;
 }
 @media (max-width: 800px) {
-  .item18 .item19 {
-    height: 150%;
-    grid-row: 16/17;
+  .item19 {
+    grid-row: 1/2;
     grid-column: 1;
-    font-size: 2px;
+    width: 100%;
+    height: 200px;
   }
 }
-.item18 .item20 {
+
+.item20 {
+  grid-row: 1/1;
+  grid-column: 2/3;
   color: white;
+  width: 75%;
   font-family: "Montserrat";
-  margin-top: 50px;
-  grid-row: 9/-1;
+  justify-self: center;
+  margin-top: 200px;
+  width: 75%;
+  height: 70%;
+}
+@media (max-width: 800px) {
+  .item20 {
+    grid-row: 2/2;
+    grid-column: 1;
+  }
+  .item20 p {
+    font-size: 14px;
+  }
+}
+
+.item21 {
+  grid-row: 2/2;
+  grid-column: 1/2;
+  color: white;
+  width: 75%;
+  font-family: "Montserrat";
+  margin: 40px;
+  margin-top: 200px;
+  justify-self: center;
+  height: 70%;
+}
+@media (max-width: 800px) {
+  .item21 {
+    grid-row: 4/4;
+    grid-column: 1;
+  }
+  .item21 p {
+    font-size: 14px;
+  }
+}
+
+.item22 {
+  background-image: url(../img/Passion.gif);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-self: center;
+  width: 60%;
+  height: 70%;
+  grid-row: 2/2;
   grid-column: 2/3;
 }
 @media (max-width: 800px) {
-  .item18 .item20 {
-    grid-row: 17/18;
+  .item22 {
+    grid-row: 3/3;
     grid-column: 1;
+    width: 100%;
+    height: 200px;
   }
 }
 
