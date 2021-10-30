@@ -8,3 +8,4 @@ function toggleHamburger() {
 }
 
 ham.addEventListener("click", toggleHamburger); // On crée une fonction lors d'un click
+
