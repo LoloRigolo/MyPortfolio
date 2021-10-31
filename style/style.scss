@@ -57,6 +57,7 @@ a{
     gap: 30px;
     padding-right: 20px;
     justify-content: flex-end;
+
     @include max800px{
         display: none;
     }
@@ -276,7 +277,20 @@ html {
     transform: translateY(-100%); /*Cache le menu par défaut*/
     transition: transform 0.7s ease;
     z-index: 40000;
-   
+
+    @include max800px{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(54, 53, 53);
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        transition: transform 0.7s ease;
+        z-index: 4000;
+    }
     
     & ul {
         width: 100%;
@@ -286,6 +300,16 @@ html {
         flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
+        @include max800px{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-content: flex-end;
+        }
     }  
 
         & ul a {
@@ -295,6 +319,13 @@ html {
         text-decoration: none;
         font-family: 'Montserrat';
         font-size: 1.2rem;
+        @include max800px{
+            color: white;
+            border-bottom: 1px solid white;
+            text-decoration: none;
+            font-size: 18px;
+
+        }
         }
     }
 
@@ -812,44 +843,6 @@ video{
     transform: translateY(0);    
 }
     
-.navbar {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(54, 53, 53);
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    color: white;
-    transition: transform 0.7s ease;
-    z-index: 4000;
-
-    
-    & ul { 
-    
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-content: flex-end;
-    
-       
-    } 
-      
-        & ul a {
-        color: white;
-    
-        border-bottom: 1px solid white;
-        text-decoration: none;
-        font-size: 18px;
-        }
-
-        
-    }
 
 
     
