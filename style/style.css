@@ -131,7 +131,6 @@ section {
   height: 70%;
   background-image: url(../img/card.jpg);
   background-size: cover;
-  box-shadow: 0 8px 16px rgba(82, 82, 82, 0.2);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -140,6 +139,7 @@ section {
 @media (max-width: 800px) {
   .card {
     width: 90%;
+    height: 85%;
   }
 }
 
@@ -421,7 +421,7 @@ html {
 }
 
 .item5 {
-  background-image: url(../img/html.png);
+  background-image: url(../img/Html.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;

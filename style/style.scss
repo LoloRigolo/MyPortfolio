@@ -155,7 +155,6 @@ section {
     height: 70%;
     background-image: url(../img/card.jpg);
     background-size: cover;
-    box-shadow: 0 8px 16px rgba(82, 82, 82, 0.2);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -163,6 +162,8 @@ section {
     
     @include max800px{
         width: 90%;
+        height: 85%;
+       
     }
 }
 
