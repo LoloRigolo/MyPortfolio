@@ -488,6 +488,7 @@ p {
   transition: 0.3s linear;
 }
 
+
 @media screen and (max-width: 800px) {
 .card p {
   margin-top: 20px;
