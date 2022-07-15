@@ -25,8 +25,6 @@ menu_item.forEach((item) => {
 });
 
 
-
-
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {

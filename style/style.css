@@ -80,7 +80,6 @@ html {
 img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 
@@ -785,7 +784,6 @@ p {
 
 ::selection{
   color: #fff;
-  
   background: #f5b223;
 }
 .skill-bars{
